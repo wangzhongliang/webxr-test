@@ -73,12 +73,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       scene.addNode(arObject);
 
       let flower = new Gltf2Node({url: './well/well.gltf'});
+      vec3.set(flower.scale, 0.01, 0.01, 0.01);
       arObject.addNode(flower);
 
       // Having a really simple drop shadow underneath an object helps ground
       // it in the world without adding much complexity.
       let shadow = new DropShadowNode();
-      vec3.set(shadow.scale, 0.001, 0.001, 0.001);
+      vec3.set(shadow.scale, 0.15, 0.15, 0.15);
       arObject.addNode(shadow);
 
       const MAX_FLOWERS = 30;
