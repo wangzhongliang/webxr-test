@@ -15,7 +15,12 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "\u7acb\u65b9\u4f53"
+            "name" : "\u7acb\u65b9\u4f53",
+            "scale" : [
+                10,
+                10,
+                10
+            ]
         }
     ],
     "materials" : [
